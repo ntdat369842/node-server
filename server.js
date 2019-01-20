@@ -49,6 +49,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Our projects',
+        content: 'Take a look now'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Cant response'
